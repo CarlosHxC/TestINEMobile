@@ -1,0 +1,24 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="title" ng-model="data.title">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="body" ng-model="data.body">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="userid" ng-model="data.id">
+  </label>
+</div>
+<button class="button button-full button-assertive" ng-click="tryPOST(data)">
+  POST
+</button>
+<p>
+  {{data | json}}
+</p>
+<p>
+  {{resultPost}}
+</p>
+  </ion-content>
+</ion-view>

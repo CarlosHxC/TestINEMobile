@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>Camera</h2>
+    <button class="button button-full button-assertive" ng-click="takePhoto()">
+      Take Photo
+    </button>
+    <button class="button button-full button-assertive" ng-click="tryGET()">
+        GET
+    </button>
+    <p>
+      {{URI}}
+    </p>
+    <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+
+  </ion-content>
+</ion-view>
